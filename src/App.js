@@ -1,8 +1,15 @@
 import jetski from './jetski.jpg';
 import './App.css';
+import React from 'react';
+import Home from './Home';
+import About from './About';
+import Blog from './Blog';
+import Contact from './Contact';
+// import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
+    
     <div className="App">
       <nav className='nav'>
         <ul>
@@ -27,6 +34,18 @@ function App() {
           Google
         </a>
       </header>
+      <div id="home">
+        <Home />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="blog">
+        <Blog />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
     </div>
   );
 }
